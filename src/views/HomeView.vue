@@ -2,9 +2,8 @@
   <main class="site">
     <SiteHeader :nav-items="navItems" />
     <HeroSection :stats="heroStats" />
-    <ServicesSection :services="services" />
     <WorksSection :categories="projectCategories" :works="works" />
-    <ProcessSection :steps="processSteps" />
+    <ServicesSection :services="services" :steps="processSteps" />
     <ContactSection />
   </main>
 </template>
@@ -13,7 +12,6 @@
 import { defineComponent } from 'vue'
 import ContactSection from '@/components/home/ContactSection.vue'
 import HeroSection from '@/components/home/HeroSection.vue'
-import ProcessSection from '@/components/home/ProcessSection.vue'
 import ServicesSection from '@/components/home/ServicesSection.vue'
 import SiteHeader from '@/components/home/SiteHeader.vue'
 import WorksSection from '@/components/home/WorksSection.vue'
@@ -24,7 +22,6 @@ export default defineComponent({
   components: {
     ContactSection,
     HeroSection,
-    ProcessSection,
     ServicesSection,
     SiteHeader,
     WorksSection,

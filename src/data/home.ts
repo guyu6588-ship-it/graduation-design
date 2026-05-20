@@ -1,12 +1,11 @@
-import projectAdminTrade from '@/assets/projects/project-admin-trade.svg'
-import projectCampusDashboard from '@/assets/projects/project-campus-dashboard.svg'
-import projectDormRepair from '@/assets/projects/project-dorm-repair.svg'
-import projectExamBank from '@/assets/projects/project-exam-bank.svg'
-import projectFitnessMiniapp from '@/assets/projects/project-fitness-miniapp.svg'
-import projectH5Farm from '@/assets/projects/project-h5-farm.svg'
-import projectHospitalBooking from '@/assets/projects/project-hospital-booking.svg'
-import projectMallAgri from '@/assets/projects/project-mall-agri.svg'
-import projectSalesBi from '@/assets/projects/project-sales-bi.svg'
+const simulatedShot = (name: string) => `project-shots-simulated/${name}.svg`
+
+const simulatedSource: OpenSourceRef = {
+  name: 'Generated realistic project mockup',
+  url: '#generated-project-showcase',
+  license: 'Generated for this portfolio site',
+  usage: '生成式项目效果示意图，用于展示可交付项目方向；非真实客户项目截图',
+}
 
 export type NavItem = {
   label: string
@@ -33,12 +32,21 @@ export type Work = {
   desc: string
   image: string
   imageAlt: string
+  gallery: string[]
+  sourceRefs: OpenSourceRef[]
   difficulty: string
   cycle: string
   techs: string[]
   deliverables: string[]
   modules: string[]
   logic: string[]
+}
+
+export type OpenSourceRef = {
+  name: string
+  url: string
+  license: string
+  usage: string
 }
 
 export type ProcessStep = {
@@ -48,10 +56,9 @@ export type ProcessStep = {
 }
 
 export const navItems: NavItem[] = [
-  { label: '服务', href: '#services' },
   { label: '项目库', href: '#works' },
-  { label: '流程', href: '#process' },
-  { label: '联系', href: '#contact' },
+  { label: '服务', href: '#services' },
+  { label: '联系我们', href: '#contact' },
 ]
 
 export const heroStats: StatItem[] = [
@@ -60,7 +67,7 @@ export const heroStats: StatItem[] = [
   { value: '源码 / 部署', label: '完整演示交付' },
 ]
 
-export const projectCategories = ['全部', '管理系统', '商城系统', '校园项目', '可视化', '小程序/H5']
+export const projectCategories = ['全部', '管理系统', '商城系统', '校园项目', '医疗系统', '可视化']
 
 export const services: Service[] = [
   {
@@ -93,11 +100,17 @@ export const works: Work[] = [
   {
     category: '校园项目',
     type: '管理系统',
-    preview: '权限 · 数据 · 统计',
+    preview: '审核 · 交易 · 统计',
     title: '校园二手交易管理平台',
-    desc: '覆盖登录权限、信息维护、审核流转和统计分析。',
-    image: projectAdminTrade,
-    imageAlt: '管理后台系统界面样例图',
+    desc: '围绕学生闲置交易场景，展示商品审核、交易记录、用户管理和数据统计。',
+    image: simulatedShot('campus-trade-overview'),
+    imageAlt: '校园二手交易管理平台生成式效果图',
+    gallery: [
+      simulatedShot('campus-trade-overview'),
+      simulatedShot('campus-trade-manage'),
+      simulatedShot('campus-trade-detail'),
+    ],
+    sourceRefs: [simulatedSource],
     difficulty: '标准',
     cycle: '2-3 周',
     techs: ['Vue3', 'TypeScript', 'Spring Boot', 'MySQL'],
@@ -106,43 +119,19 @@ export const works: Work[] = [
     logic: ['学生发布闲置商品并维护信息', '管理员审核商品状态和违规内容', '买卖双方完成沟通与交易记录沉淀'],
   },
   {
-    category: '小程序/H5',
-    type: 'H5 游戏',
-    preview: '互动 · 计分 · 排名',
-    title: 'H5 农场互动小游戏',
-    desc: '展示偷菜、答题、抽奖、排行榜等移动端玩法。',
-    image: projectH5Farm,
-    imageAlt: 'H5 小游戏界面样例图',
-    difficulty: '进阶',
-    cycle: '2-4 周',
-    techs: ['Vue3', 'Canvas', 'Node.js', 'Redis'],
-    deliverables: ['移动端页面', '活动逻辑', '接口服务', '演示数据'],
-    modules: ['移动端游戏首页', '农场互动操作', '积分与排行榜', '活动记录管理'],
-    logic: ['用户进入活动后完成指定互动任务', '系统记录分数、次数和排名变化', '后台可查看活动数据并调整基础配置'],
-  },
-  {
-    category: '可视化',
-    type: '可视化',
-    preview: '指标 · 图表 · 趋势',
-    title: '智慧校园数据可视化看板',
-    desc: '通过指标卡、趋势图和排行模块集中展示数据。',
-    image: projectCampusDashboard,
-    imageAlt: '数据可视化看板界面样例图',
-    difficulty: '标准',
-    cycle: '2-3 周',
-    techs: ['Vue3', 'ECharts', 'REST API', 'Mock'],
-    deliverables: ['看板页面', '图表配置', '接口文档', '演示说明'],
-    modules: ['核心指标卡', '趋势分析图', '排行统计', '预警信息展示'],
-    logic: ['采集校园业务数据并转换为指标', '用图表呈现趋势、占比和排行', '围绕数据变化提炼答辩展示亮点'],
-  },
-  {
     category: '商城系统',
     type: '商城系统',
-    preview: '商品 · 订单 · 支付',
+    preview: '商品 · 订单 · 运营',
     title: '农产品销售商城系统',
-    desc: '包含商品管理、购物流程、订单处理和后台运营模块。',
-    image: projectMallAgri,
-    imageAlt: '商城后台管理系统界面样例图',
+    desc: '覆盖商品管理、购物流程、订单处理、库存预警和后台运营分析。',
+    image: simulatedShot('agri-mall-overview'),
+    imageAlt: '农产品销售商城系统生成式效果图',
+    gallery: [
+      simulatedShot('agri-mall-overview'),
+      simulatedShot('agri-mall-manage'),
+      simulatedShot('agri-mall-detail'),
+    ],
+    sourceRefs: [simulatedSource],
     difficulty: '进阶',
     cycle: '3-4 周',
     techs: ['Vue3', 'Element Plus', 'Spring Boot', 'MySQL'],
@@ -151,13 +140,19 @@ export const works: Work[] = [
     logic: ['用户浏览商品并提交订单', '后台处理商品、订单和库存数据', '通过销售统计说明系统业务价值'],
   },
   {
-    category: '管理系统',
+    category: '医疗系统',
     type: '预约管理',
-    preview: '预约 · 审核 · 通知',
+    preview: '预约 · 排班 · 档案',
     title: '医院挂号预约管理系统',
-    desc: '围绕科室、医生排班、预约记录和后台审核形成完整流程。',
-    image: projectHospitalBooking,
-    imageAlt: '预约管理系统界面样例图',
+    desc: '围绕科室、医生排班、预约记录、患者档案和后台统计形成完整流程。',
+    image: simulatedShot('hospital-booking-overview'),
+    imageAlt: '医院挂号预约管理系统生成式效果图',
+    gallery: [
+      simulatedShot('hospital-booking-overview'),
+      simulatedShot('hospital-booking-manage'),
+      simulatedShot('hospital-booking-detail'),
+    ],
+    sourceRefs: [simulatedSource],
     difficulty: '标准',
     cycle: '2-3 周',
     techs: ['Vue3', 'Spring Boot', 'MyBatis', 'MySQL'],
@@ -171,8 +166,14 @@ export const works: Work[] = [
     preview: '报修 · 派单 · 评价',
     title: '宿舍报修与工单管理系统',
     desc: '支持学生提交报修、管理员派单、维修反馈和满意度统计。',
-    image: projectDormRepair,
-    imageAlt: '校园工单管理系统界面样例图',
+    image: simulatedShot('dorm-repair-overview'),
+    imageAlt: '宿舍报修与工单管理系统生成式效果图',
+    gallery: [
+      simulatedShot('dorm-repair-overview'),
+      simulatedShot('dorm-repair-manage'),
+      simulatedShot('dorm-repair-detail'),
+    ],
+    sourceRefs: [simulatedSource],
     difficulty: '基础',
     cycle: '1-2 周',
     techs: ['Vue3', 'Node.js', 'Express', 'MongoDB'],
@@ -186,8 +187,14 @@ export const works: Work[] = [
     preview: '题库 · 考试 · 成绩',
     title: '在线考试与题库管理系统',
     desc: '覆盖题库维护、试卷生成、在线答题、成绩统计和错题分析。',
-    image: projectExamBank,
-    imageAlt: '在线考试系统界面样例图',
+    image: simulatedShot('exam-bank-overview'),
+    imageAlt: '在线考试与题库管理系统生成式效果图',
+    gallery: [
+      simulatedShot('exam-bank-overview'),
+      simulatedShot('exam-bank-manage'),
+      simulatedShot('exam-bank-detail'),
+    ],
+    sourceRefs: [simulatedSource],
     difficulty: '进阶',
     cycle: '3-4 周',
     techs: ['React', 'Ant Design', 'Spring Boot', 'MySQL'],
@@ -196,28 +203,19 @@ export const works: Work[] = [
     logic: ['教师维护题目并生成考试试卷', '学生在线完成考试并提交答案', '系统自动统计成绩和错题情况'],
   },
   {
-    category: '小程序/H5',
-    type: '小程序',
-    preview: '预约 · 分享 · 管理',
-    title: '健身房会员预约小程序',
-    desc: '支持课程预约、会员资料、签到记录和后台课程管理。',
-    image: projectFitnessMiniapp,
-    imageAlt: '移动端预约项目界面样例图',
-    difficulty: '标准',
-    cycle: '2-3 周',
-    techs: ['uni-app', 'Vue3', 'Spring Boot', 'MySQL'],
-    deliverables: ['小程序端', '管理后台', '接口服务', '演示说明'],
-    modules: ['课程预约', '会员资料', '签到记录', '后台课程管理'],
-    logic: ['会员选择课程并提交预约', '系统校验名额和预约时间', '后台统计签到、课程和会员活跃情况'],
-  },
-  {
     category: '可视化',
     type: '分析看板',
     preview: '排行 · 预警 · 趋势',
     title: '企业销售数据分析看板',
     desc: '通过业绩指标、区域排行、趋势预警展示数据分析能力。',
-    image: projectSalesBi,
-    imageAlt: '销售数据分析看板界面样例图',
+    image: simulatedShot('sales-bi-overview'),
+    imageAlt: '企业销售数据分析看板生成式效果图',
+    gallery: [
+      simulatedShot('sales-bi-overview'),
+      simulatedShot('sales-bi-manage'),
+      simulatedShot('sales-bi-detail'),
+    ],
+    sourceRefs: [simulatedSource],
     difficulty: '标准',
     cycle: '2-3 周',
     techs: ['Vue3', 'ECharts', 'Mock.js', 'REST API'],

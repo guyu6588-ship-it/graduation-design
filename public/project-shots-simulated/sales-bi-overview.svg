@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="企业销售数据分析看板-overview">
+  <defs>
+    <filter id="shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#102033" flood-opacity=".16"/>
+    </filter>
+    <linearGradient id="brand" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#13b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="#eaf6fb"/>
+  <rect x="88" y="70" width="1264" height="760" rx="34" fill="#fff" filter="url(#shadow)"/>
+  
+    <rect x="88" y="70" width="1264" height="760" rx="34" fill="#101827"/>
+    <text x="146" y="146" fill="#fff" font-family="Arial, sans-serif" font-size="34" font-weight="900">企业销售数据分析看板</text>
+    
+  <rect x="146" y="198" width="178" height="96" rx="22" fill="#fff" stroke="#e2e8f0"/>
+  <text x="168" y="231" fill="#64748b" font-family="Arial, sans-serif" font-size="13" font-weight="800">月销售额</text>
+  <text x="168" y="270" fill="#38bdf8" font-family="Arial, sans-serif" font-size="30" font-weight="900">¥862w</text>
+    
+  <rect x="346" y="198" width="178" height="96" rx="22" fill="#fff" stroke="#e2e8f0"/>
+  <text x="368" y="231" fill="#64748b" font-family="Arial, sans-serif" font-size="13" font-weight="800">新增客户</text>
+  <text x="368" y="270" fill="#34d399" font-family="Arial, sans-serif" font-size="30" font-weight="900">1,248</text>
+    
+  <rect x="546" y="198" width="178" height="96" rx="22" fill="#fff" stroke="#e2e8f0"/>
+  <text x="568" y="231" fill="#64748b" font-family="Arial, sans-serif" font-size="13" font-weight="800">转化率</text>
+  <text x="568" y="270" fill="#facc15" font-family="Arial, sans-serif" font-size="30" font-weight="900">23.8%</text>
+    <rect x="146" y="340" width="640" height="332" rx="28" fill="#182336"/>
+    <text x="188" y="396" fill="#fff" font-family="Arial, sans-serif" font-size="24" font-weight="900">区域销售趋势</text>
+    <path d="M198 584 C276 464 346 538 420 426 S578 482 720 378" fill="none" stroke="#38bdf8" stroke-width="12" stroke-linecap="round"/>
+    <rect x="834" y="198" width="330" height="474" rx="28" fill="#182336"/>
+    <text x="876" y="258" fill="#fff" font-family="Arial, sans-serif" font-size="24" font-weight="900">区域排行</text>
+    <rect x="876" y="306" width="210" height="34" rx="17" fill="#38bdf8" opacity=".78"/><text x="888" y="330" fill="#fff" font-family="Arial, sans-serif" font-size="15" font-weight="900">华东 ¥286.2w</text><rect x="876" y="382" width="188" height="34" rx="17" fill="#34d399" opacity=".78"/><text x="888" y="406" fill="#fff" font-family="Arial, sans-serif" font-size="15" font-weight="900">华南 ¥164.8w</text><rect x="876" y="458" width="166" height="34" rx="17" fill="#38bdf8" opacity=".78"/><text x="888" y="482" fill="#fff" font-family="Arial, sans-serif" font-size="15" font-weight="900">西南 ¥142.1w</text><rect x="876" y="534" width="144" height="34" rx="17" fill="#34d399" opacity=".78"/><text x="888" y="558" fill="#fff" font-family="Arial, sans-serif" font-size="15" font-weight="900">华北 ¥128.5w</text>
+</svg>

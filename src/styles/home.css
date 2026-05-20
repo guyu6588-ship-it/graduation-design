@@ -376,6 +376,36 @@ h1 {
   content: "•";
 }
 
+.service-process {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 44px;
+  align-items: start;
+  margin-top: 42px;
+  padding-top: 42px;
+  border-top: 1px solid #e4e9f0;
+}
+
+.process-copy {
+  position: sticky;
+  top: 104px;
+}
+
+.process-copy h3 {
+  margin-bottom: 12px;
+  color: #111827;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.24;
+}
+
+.process-copy p:not(.eyebrow) {
+  color: #607086;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.85;
+}
+
 .works-section {
   width: 100%;
   padding-right: max(20px, calc((100% - 1180px) / 2));
@@ -448,7 +478,7 @@ h1 {
   display: block;
   min-height: 190px;
   color: #ffffff;
-  background: #0f172a;
+  background: #eef4f7;
   overflow: hidden;
 }
 
@@ -456,13 +486,14 @@ h1 {
   display: block;
   width: 100%;
   height: 220px;
-  object-fit: cover;
-  transform: scale(1.01);
+  object-fit: contain;
+  padding: 10px;
+  transform: scale(1);
   transition: transform 0.35s ease;
 }
 
 .work-card:hover .work-preview img {
-  transform: scale(1.06);
+  transform: scale(1.025);
 }
 
 .work-preview::after {
@@ -677,8 +708,40 @@ h1 {
 .project-detail-preview img {
   display: block;
   width: 100%;
-  min-height: 320px;
-  object-fit: cover;
+  aspect-ratio: 16 / 10;
+  min-height: 0;
+  object-fit: contain;
+  background: #eef4f7;
+}
+
+.project-gallery-thumbs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 12px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.project-gallery-thumbs button {
+  overflow: hidden;
+  padding: 0;
+  background: #f8fafc;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+.project-gallery-thumbs button.active {
+  border-color: #0e766f;
+}
+
+.project-gallery-thumbs img {
+  display: block;
+  width: 100%;
+  min-height: 70px;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background: #eef4f7;
 }
 
 .project-detail-content {
@@ -771,13 +834,6 @@ h1 {
   background: #0e766f;
   border-radius: 8px;
   font-weight: 900;
-}
-
-.process-section {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 54px;
-  align-items: start;
 }
 
 .process-list {
@@ -879,7 +935,7 @@ h1 {
 
 @media (max-width: 980px) {
   .hero,
-  .process-section,
+  .service-process,
   .contact,
   .project-dialog {
     grid-template-columns: 1fr;
@@ -897,6 +953,10 @@ h1 {
 
   .hero-visual {
     min-height: 420px;
+  }
+
+  .process-copy {
+    position: static;
   }
 
   .service-grid,

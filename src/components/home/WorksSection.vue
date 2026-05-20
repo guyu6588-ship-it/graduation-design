@@ -92,7 +92,19 @@
       <div class="project-dialog" @click.stop>
         <button class="project-close" type="button" aria-label="关闭项目详情" @click="closeWork">×</button>
         <div class="project-detail-preview">
-          <img :src="selectedWork.image" :alt="selectedWork.imageAlt" />
+          <img :src="activeGalleryImage" :alt="selectedWork.imageAlt" />
+          <div class="project-gallery-thumbs" aria-label="项目截图切换">
+            <button
+              v-for="(image, index) in selectedWork.gallery"
+              :key="image"
+              :class="{ active: index === activeGalleryIndex }"
+              type="button"
+              :aria-label="`查看第 ${index + 1} 张项目截图`"
+              @click="activeGalleryIndex = index"
+            >
+              <img :src="image" :alt="`${selectedWork.title}截图 ${index + 1}`" />
+            </button>
+          </div>
         </div>
         <div class="project-detail-content">
           <p class="work-tag">{{ selectedWork.category }} / {{ selectedWork.type }}</p>
@@ -167,6 +179,7 @@ export default defineComponent({
     const slideStep = ref(0)
     const slidesPerView = ref(3)
     const selectedWork = ref<Work | null>(null)
+    const activeGalleryIndex = ref(0)
     let autoplayTimer: number | undefined
 
     const filteredWorks = computed(() => {
@@ -229,6 +242,7 @@ export default defineComponent({
 
     const openWork = (work: Work) => {
       selectedWork.value = work
+      activeGalleryIndex.value = 0
       pauseAutoplay()
     }
 
@@ -242,6 +256,14 @@ export default defineComponent({
         closeWork()
       }
     }
+
+    const activeGalleryImage = computed(() => {
+      if (!selectedWork.value) {
+        return ''
+      }
+
+      return selectedWork.value.gallery[activeGalleryIndex.value] || selectedWork.value.image
+    })
 
     watch(activeCategory, () => {
       activeIndex.value = 0
@@ -272,6 +294,8 @@ export default defineComponent({
 
     return {
       activeCategory,
+      activeGalleryImage,
+      activeGalleryIndex,
       activeIndex,
       filteredWorks,
       goNext,
