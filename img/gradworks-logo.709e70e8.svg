@@ -1,0 +1,15 @@
+<svg width="188" height="46" viewBox="0 0 188 46" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">毕设工坊 项目展示交付</title>
+  <rect x="0.75" y="0.75" width="44.5" height="44.5" rx="12" fill="url(#mark)" stroke="rgba(15,118,110,0.18)" stroke-width="1.5"/>
+  <path d="M13.5 14.5H24.2C29.1 14.5 32.5 17.7 32.5 22.8C32.5 27.9 29.1 31.2 24.2 31.2H18.2V35H13.5V14.5ZM23.8 26.8C26.1 26.8 27.6 25.4 27.6 22.8C27.6 20.3 26.1 18.9 23.8 18.9H18.2V26.8H23.8Z" fill="white"/>
+  <path d="M25.8 10.4L35.5 16.1V27.5L25.8 33.2L16 27.5V16.1L25.8 10.4Z" stroke="white" stroke-opacity="0.62" stroke-width="2"/>
+  <path d="M25.8 17.2L29.7 19.5V24.1L25.8 26.4L21.8 24.1V19.5L25.8 17.2Z" fill="#FACC15"/>
+  <text x="58" y="21" fill="#111827" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="19" font-weight="900" letter-spacing="0">毕设工坊</text>
+  <text x="59" y="37" fill="#64748B" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="1.4">项目展示交付</text>
+  <defs>
+    <linearGradient id="mark" x1="4" y1="3" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#155E75"/>
+    </linearGradient>
+  </defs>
+</svg>
