@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="企业销售数据分析看板界面展示">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#111827"/><stop offset="1" stop-color="#581c87"/></linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="960" height="600" fill="url(#bg)"/>
+  <rect x="72" y="76" width="816" height="448" rx="30" fill="#ffffff" opacity=".09" stroke="#c4b5fd"/>
+  <text x="112" y="136" fill="#fff" font-family="Arial, sans-serif" font-size="30" font-weight="800">Sales BI Dashboard</text>
+  <rect x="112" y="178" width="176" height="96" rx="20" fill="#7c3aed" opacity=".38"/>
+  <rect x="320" y="178" width="176" height="96" rx="20" fill="#06b6d4" opacity=".32"/>
+  <rect x="528" y="178" width="176" height="96" rx="20" fill="#22c55e" opacity=".3"/>
+  <text x="140" y="235" fill="#fff" font-family="Arial, sans-serif" font-size="32" font-weight="900">286w</text>
+  <text x="348" y="235" fill="#fff" font-family="Arial, sans-serif" font-size="32" font-weight="900">+18%</text>
+  <text x="556" y="235" fill="#fff" font-family="Arial, sans-serif" font-size="32" font-weight="900">64</text>
+  <path d="M134 430l88-64 92 34 92-92 106 58 104-126 96 92 92-42" fill="none" stroke="#f0abfc" stroke-width="12" stroke-linecap="round" filter="url(#glow)"/>
+  <rect x="126" y="462" width="688" height="12" rx="6" fill="#ddd6fe" opacity=".55"/>
+  <circle cx="762" cy="224" r="62" fill="none" stroke="#67e8f9" stroke-width="18" opacity=".72"/>
+</svg>
