@@ -3,7 +3,7 @@
     <SiteHeader :nav-items="navItems" />
     <HeroSection :stats="heroStats" />
     <ServicesSection :services="services" />
-    <WorksSection :works="works" />
+    <WorksSection :categories="projectCategories" :works="works" />
     <ProcessSection :steps="processSteps" />
     <ContactSection />
   </main>
@@ -17,7 +17,7 @@ import ProcessSection from '@/components/home/ProcessSection.vue'
 import ServicesSection from '@/components/home/ServicesSection.vue'
 import SiteHeader from '@/components/home/SiteHeader.vue'
 import WorksSection from '@/components/home/WorksSection.vue'
-import { heroStats, navItems, processSteps, services, works } from '@/data/home'
+import { heroStats, navItems, processSteps, projectCategories, services, works } from '@/data/home'
 
 export default defineComponent({
   name: 'HomeView',
@@ -34,6 +34,7 @@ export default defineComponent({
       heroStats,
       navItems,
       processSteps,
+      projectCategories,
       services,
       works,
     }

@@ -50,6 +50,10 @@ textarea {
   font: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 #app {
   min-height: 100vh;
 }

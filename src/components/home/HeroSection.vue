@@ -2,15 +2,15 @@
   <section id="hero" class="hero">
     <div class="hero-copy">
       <p class="eyebrow">Graduation Project Delivery</p>
-      <h1>毕业设计开发展示</h1>
-      <p class="hero-subtitle">展示说明与上线演示支持</p>
+      <h1>毕业设计项目库</h1>
+      <p class="hero-subtitle">从选题方案到上线演示</p>
       <p class="hero-text">
-        为毕业设计提供项目规划、界面实现、接口开发、数据可视化与部署支持。
-        交付重点放在清晰的业务逻辑、稳定的演示环境，以及答辩现场能讲明白的作品结构。
+        汇总管理系统、商城项目、校园服务、移动端互动和数据可视化等常见方向。
+        每个项目都围绕功能闭环、技术实现、部署演示和答辩表达来组织。
       </p>
 
       <div class="hero-actions">
-        <a class="primary-btn" href="#works">查看案例方向</a>
+        <a class="primary-btn" href="#works">浏览项目库</a>
         <a class="secondary-btn" href="#contact">提交项目需求</a>
       </div>
 
