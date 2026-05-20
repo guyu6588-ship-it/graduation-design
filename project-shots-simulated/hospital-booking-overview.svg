@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="医院挂号预约管理系统-overview">
+  <defs>
+    <filter id="shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#102033" flood-opacity=".16"/>
+    </filter>
+    <linearGradient id="brand" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#13b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="#f1f7ff"/>
+  <rect x="88" y="70" width="1264" height="760" rx="34" fill="#fff" filter="url(#shadow)"/>
+  
+    <rect x="128" y="110" width="1184" height="96" rx="28" fill="#eff6ff"/>
+    <text x="176" y="168" fill="#1d4ed8" font-family="Arial, sans-serif" font-size="34" font-weight="900">医院挂号预约管理系统</text>
+    
+  <rect x="176" y="250" width="178" height="96" rx="22" fill="#fff" stroke="#e2e8f0"/>
+  <text x="198" y="283" fill="#64748b" font-family="Arial, sans-serif" font-size="13" font-weight="800">今日预约</text>
+  <text x="198" y="322" fill="#2563eb" font-family="Arial, sans-serif" font-size="30" font-weight="900">216</text>
+    
+  <rect x="376" y="250" width="178" height="96" rx="22" fill="#fff" stroke="#e2e8f0"/>
+  <text x="398" y="283" fill="#64748b" font-family="Arial, sans-serif" font-size="13" font-weight="800">候诊人数</text>
+  <text x="398" y="322" fill="#06b6d4" font-family="Arial, sans-serif" font-size="30" font-weight="900">42</text>
+    
+  <rect x="576" y="250" width="178" height="96" rx="22" fill="#fff" stroke="#e2e8f0"/>
+  <text x="598" y="283" fill="#64748b" font-family="Arial, sans-serif" font-size="13" font-weight="800">可约号源</text>
+  <text x="598" y="322" fill="#16a34a" font-family="Arial, sans-serif" font-size="30" font-weight="900">683</text>
+    <rect x="176" y="392" width="476" height="284" rx="22" fill="#fff" stroke="#e2e8f0"/>
+    <text x="212" y="442" fill="#0f172a" font-family="Arial, sans-serif" font-size="22" font-weight="900">医生排班</text>
+    <rect x="212" y="474" width="398" height="34" rx="12" fill="#f8fafc"/><text x="232" y="497" fill="#334155" font-family="Arial, sans-serif" font-size="15" font-weight="800">内科 王医生 09:00 已满</text><rect x="212" y="519" width="398" height="34" rx="12" fill="#fff"/><text x="232" y="542" fill="#334155" font-family="Arial, sans-serif" font-size="15" font-weight="800">口腔科 李医生 14:00 可预约</text><rect x="212" y="564" width="398" height="34" rx="12" fill="#f8fafc"/><text x="232" y="587" fill="#334155" font-family="Arial, sans-serif" font-size="15" font-weight="800">儿科 周医生 10:00 候补</text><rect x="212" y="609" width="398" height="34" rx="12" fill="#fff"/><text x="232" y="632" fill="#334155" font-family="Arial, sans-serif" font-size="15" font-weight="800">眼科 陈医生 15:00 可预约</text>
+    <rect x="704" y="250" width="480" height="426" rx="22" fill="#f8fbff" stroke="#e2e8f0"/>
+    <text x="744" y="308" fill="#0f172a" font-family="Arial, sans-serif" font-size="22" font-weight="900">预约时间分布</text>
+    <rect x="756" y="356" width="350" height="54" rx="16" fill="#dbeafe"/><rect x="756" y="436" width="296" height="54" rx="16" fill="#ccfbf1"/><rect x="756" y="516" width="386" height="54" rx="16" fill="#e0f2fe"/>
+    <circle cx="1132" cy="386" r="42" fill="#2563eb" opacity=".16"/><text x="1108" y="396" fill="#2563eb" font-family="Arial, sans-serif" font-size="22" font-weight="900">72%</text>
+</svg>

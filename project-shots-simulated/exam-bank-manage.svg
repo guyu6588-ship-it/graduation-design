@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="在线考试与题库管理系统-manage">
+  <defs>
+    <filter id="shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#102033" flood-opacity=".16"/>
+    </filter>
+    <linearGradient id="brand" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#13b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="#faf7ff"/>
+  <rect x="88" y="70" width="1264" height="760" rx="34" fill="#fff" filter="url(#shadow)"/>
+  
+    
+  <rect x="128" y="108" width="1184" height="68" rx="24" fill="#f8fafc"/>
+  <text x="168" y="148" fill="#0f172a" font-family="Arial, sans-serif" font-size="26" font-weight="900">在线考试与题库管理系统</text>
+  <text x="1008" y="148" fill="#64748b" font-family="Arial, sans-serif" font-size="14" font-weight="700">题库工作台</text>
+    <rect x="150" y="226" width="350" height="486" rx="22" fill="#fbf8ff" stroke="#e2e8f0"/>
+    <text x="190" y="282" fill="#5b21b6" font-family="Arial, sans-serif" font-size="24" font-weight="900">试卷结构</text>
+    <rect x="190" y="326" width="236" height="46" rx="16" fill="#fff" stroke="#ddd6fe"/><text x="216" y="356" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="900">单选题 30</text><rect x="190" y="398" width="236" height="46" rx="16" fill="#fff" stroke="#ddd6fe"/><text x="216" y="428" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="900">多选题 15</text><rect x="190" y="470" width="236" height="46" rx="16" fill="#fff" stroke="#ddd6fe"/><text x="216" y="500" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="900">判断题 20</text><rect x="190" y="542" width="236" height="46" rx="16" fill="#fff" stroke="#ddd6fe"/><text x="216" y="572" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="900">简答题 4</text>
+    <rect x="552" y="226" width="642" height="486" rx="22" fill="#fff" stroke="#e2e8f0"/>
+    <text x="592" y="282" fill="#0f172a" font-family="Arial, sans-serif" font-size="24" font-weight="900">考试监控</text>
+    <rect x="592" y="326" width="520" height="42" rx="14" fill="#f8fafc"/><text x="616" y="353" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="900">软件工程期末测试</text><rect x="950" y="338" width="88" height="16" rx="8" fill="#7c3aed" opacity=".58"/><rect x="592" y="388" width="520" height="42" rx="14" fill="#fff"/><text x="616" y="415" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="900">数据库章节练习</text><rect x="950" y="400" width="112" height="16" rx="8" fill="#7c3aed" opacity=".58"/><rect x="592" y="450" width="520" height="42" rx="14" fill="#f8fafc"/><text x="616" y="477" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="900">Java 基础测验</text><rect x="950" y="462" width="136" height="16" rx="8" fill="#7c3aed" opacity=".58"/><rect x="592" y="512" width="520" height="42" rx="14" fill="#fff"/><text x="616" y="539" fill="#111827" font-family="Arial, sans-serif" font-size="16" font-weight="900">Web 前端综合题</text><rect x="950" y="524" width="160" height="16" rx="8" fill="#7c3aed" opacity=".58"/>
+    <circle cx="1070" cy="622" r="44" fill="#fef3c7"/><text x="1048" y="633" fill="#ca8a04" font-family="Arial, sans-serif" font-size="24" font-weight="900">81</text>
+</svg>
